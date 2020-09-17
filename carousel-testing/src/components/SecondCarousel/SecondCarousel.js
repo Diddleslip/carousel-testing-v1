@@ -14,7 +14,9 @@ class Gallery extends React.Component {
   thumbItem = (item, i) => (
     <img 
       key={item} 
-      onClick={() => this.Carousel.slideTo(i)} 
+      onClick={() => {
+        this.Carousel.slideTo(i)
+      }} 
       src={item}
       className="thumbImages"
     />
