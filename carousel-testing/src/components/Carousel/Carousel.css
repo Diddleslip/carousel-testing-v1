@@ -1,0 +1,20 @@
+.carousel {
+  margin: auto;
+  width: 50%;
+}
+
+.w-100 {
+  /* This adjusts the height of the pictures. */
+  height: 50vh;
+}
+
+.carousel-indicators li {
+  /* Saying !important before semi-colon gives you prio. */
+  /* background-color: red!important; */
+  /* background-image: url("https://i.imgur.com/VTpz8XB.jpg")!important; */
+  background-color: red!important;
+  /* border-radius: 50%!important; */
+  height: 10px!important;
+  width: 10px!important;
+
+ }
