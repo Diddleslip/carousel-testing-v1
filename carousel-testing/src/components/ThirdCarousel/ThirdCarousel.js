@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -10,17 +10,16 @@ function ThirdCarousel() {
   let Carousel = useRef();
   
   const galleryItems = items.map((image, index) => (
-    <img className="mainImages" key={index} src={image} ></img>
+    <img alt="img" className="mainImages" key={index} src={image} ></img>
   ))
 
   const thumbItem = (item, index) => (
     <img 
+      alt="Img"
       key={item} 
-      onClick={() => {
-        Carousel.slideTo(index)
-      }} 
+      onClick={() => Carousel.slideTo(index)} 
       src={item}
-      className="thumbImages"
+      className={`thumbImages`}
     />
   )
 
